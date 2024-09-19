@@ -581,6 +581,98 @@ html{
     margin-bottom: 0px;
 }
 
+.proyectos{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.proyectos .contenido-seccion{
+    max-width: 1500px;
+    margin: auto;
+}
+.proyectos h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0px;
+
+}
+.proyectos .fila{
+    display: flex;
+    gap: 50px;
+}
+
+
+.proyectos .fila .item{
+    padding: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: #252A2E;
+    position: relative;
+    width: 500px;
+    height: 480px;
+    overflow: hidden; 
+
+}
+.proyectos .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.proyectos .fila .item p {
+    line-height: 24px;
+  }
+
+.proyectos .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.proyectos .fila .item p{
+    line-height: 24px;
+}
+
+.proyectos .fila .item .casa{
+    color: #1CB698;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+
+/* Estilo del overlay */
+.proyectos .fila .item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1CB698; /* Fondo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Imagen dentro del overlay */
+.proyectos .fila .item .overlay img {
+    width: 100%; /* Haz que la imagen ocupe el 100% del ancho */
+    height: 100%; /* Haz que la imagen ocupe el 100% de la altura */
+    object-fit: fill; /* Ajusta la imagen para que quepa dentro del contenedor */
+
+}
+
+/* Mostrar el overlay al hacer hover en .item */
+.proyectos .fila .item:hover .overlay {
+    opacity: 1;
+}
+
+
+
 /* SECCION CONTACTO */
 .contacto{
     background-image: url(img/contact_bg.png);
