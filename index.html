@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi Portfolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img\hero.png" alt="">
+            </div>
+            <h1>Alex Rosa</h1>
+            <h2>Junior - Desarrollador Web</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/alex-rosa-garcía-aa5328310/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AlexRosa16"><i class="fa-brands fa-github"></i></a> 
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Alex Rosa.</span> Mi nombre es Alex Rosa y recientemente he finalizado mis estudios de Grado Superior en Desarrollo Web. Estoy muy motivado en el ambito de Desarrollador Web, cada dia busco aprender y mejorar.
+                </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            16-07-2003
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            601367554
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            alexrosainfo@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong><a href="https://alexrosa16.github.io/Portfolio/">Mi Web</a>
+                            
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Programar</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="\Escritorio\curriculum" download="CV Alex Rosa García.pdf">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>            
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>63%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Laravel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>86%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>77%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>ESO</h4>
+                        <span class="casa">Ies Salvador Gadea</span>
+                        <span class="fecha">2015 - 2019</span>
+                        <p>Durante mis estudios de la Educación Secundaria Obligatoria (ESO) en el IES Salvador Gadea, adquirí una sólida base en ciencias, matemáticas y lenguas, desarrollando habilidades críticas y analíticas que me han ayudado en mi formación académica posterior.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Grado Medio en Sistemas MicroInformáticos y Redes</h4>
+                        <span class="casa">Ies Salvador Gadea</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>En este programa, me especialicé en la configuración y mantenimiento de sistemas informáticos y redes. Aprendí a diagnosticar y resolver problemas técnicos, además de adquirir conocimientos sobre sistemas operativos, hardware y seguridad de la información o Ciberseguridad.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Grado Superior en Desarrollo de Aplicaciones Web</h4>
+                        <span class="casa">Ies Salvador Gadea</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>En este programa,he desarrollado aplicaciones web con tecnologías como HTML, CSS, JavaScript, PHP y frameworks modernos como Laravel. Además, aprendi sobre bases de datos como Mysql, backend y metodologías ágiles de desarrollo.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Técnico Informático</h4>
+                        <span class="casa">Registro de la Propiedad(Practicas)</span>
+                        <span class="fecha">Marzo - Junio 2022</span>
+                        <p>Durante mis prácticas como Técnico Informático en el Registro de la Propiedad, proporcioné soporte técnico a los empleados, resolviendo incidencias con equipos y software. También colaboré en la administración de redes y sistemas, mejorando mi capacidad para trabajar en entornos de TI empresariales.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico Informático</h4>
+                        <span class="casa">Registro de la Propiedad</span>
+                        <span class="fecha">Julio - Octubre 2022 Agosto - 2023</span>
+                        <p>En mi trabajo como Técnico Informático, fui responsable de proporcionar soporte técnico a los empleados, resolviendo incidencias con equipos y software. Realicé tareas de diagnóstico y solución de problemas, asegurando un rendimiento óptimo de los sistemas informáticos y proporcionando un servicio eficaz a los usuarios. Ademas de aportando ideas innovadoras para la mejora del funcionamiento de los equipos informáticos</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Web</h4>
+                        <span class="casa">DobleAShowroom(Practicas)</span>
+                        <span class="fecha">Marzo - Junio 2024</span>
+                        <p>Como desarrollador web en prácticas en DobleAShowroom, estuve involucrado en el desarrollo y mantenimiento del sitio web. Trabaje con tecnologías de front-end (HTML,CSS,JavaScript) y back-end (PHP, Mysql) contribuyendo al diseño y la implementación de funcionalidades innovadoras y mejorando la experiencia del usuario.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Lenguajes</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/htmld.png" alt="">
+                </div>
+                <div class="proyecto1">
+                    <img src="img/css.png" alt="">
+                </div>
+                <div class="proyecto2">
+                    <img src="img/js.png" alt="">
+                </div>
+                <div class="proyecto3">
+                    <img src="img/php.png" alt="">
+                </div>
+                <div class="proyecto4">
+                    <img src="img/Laravel.png" alt="">
+                </div>
+                <div class="proyecto5">
+                    <img src="img/Python.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="fila">
+                <!-- Item 1 -->
+                <div class="item">
+                    <h2>VoidBoosting.gg</h2>
+                    <div class="imagenes-container">
+                        <img class="imagenesitem1" src="img/htmld.png" alt="HTML">
+                        <img class="imagenesitem2" src="img/css.png" alt="CSS">
+                        <img class="imagenesitem3" src="img/js.png" alt="JavaScript">
+                        <img class="imagenesitem4" src="img/php.png" alt="PHP">
+                    </div>
+                    <button class="repositoriovoidboosting" onclick="window.location.href='https://github.com/AlexRosa16/Voidboosting-Updated'">Repositorio</button>
+                </div>
+                <div class="item">
+                        <h4>Proyecto React</h4>
+                        <span class="casa">************Proximamente************</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                </div>
+                <div class="item">
+                        <h4>Proyecto Node.js</h4>
+                        <span class="casa">************Proximamente************</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                </div>
+                
+
+                
+            </div>
+        </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/alex-rosa-garcía-aa5328310/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/AlexRosa16"><i class="fa-brands fa-github"></i></a> 
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
